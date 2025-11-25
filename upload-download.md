@@ -1,5 +1,7 @@
 How to upload/download in Angular
 ```ts
+import {saveAs} from 'file-saver';
+
 const blob = new Blob(['File content'], {type: 'text/plain'});
 const formData = new FormData();
 formData.append('file', blob, 'file.txt');
